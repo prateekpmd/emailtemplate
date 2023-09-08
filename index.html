@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(43, 140, 167);
+        border: none;
+      }
+      table {
+        background-color: white;
+        border: none;
+      }
+      button {
+        border-radius: 16px 16px 16px 16px;
+        background-color: rgb(193, 155, 71);
+        padding: 16px;
+        outline: none;
+        border: none !important;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+      button a {
+        text-align: center;
+        display: block;
+        font-family: inherit;
+        text-decoration: none;
+        /* font-weight: bold; */
+        outline: none;
+        margin: 0px;
+        padding: 10px;
+        color: white;
+        font-size: 18px;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: rgb(43, 140, 167);
+        color: white;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 320;
+        line-height: 50%;
+        color: rgb(43, 140, 167);
+      }
+
+      @media screen and (max-width: 791px) {
+          table .ek >* {
+          display: block;
+        }
+        table .ek{
+          display: table-cell;
+          margin-left: 200px;
+        }
+        /* .ek {
+          display: inline-grid;
+          margin-left: 200px;
+        } */
+      }
+
+      @media screen and (max-width: 912px) {
+        table {
+          height: 100vh;
+        }
+      }
+
+      @media screen and (max-width: 670px) {
+         table .ek >* {
+          display: block;
+        }
+        table .ek{
+          display: table-cell;
+        }
+        /* .ek {
+          display: inline-grid;
+          margin-left: 140px;
+        } */
+      }
+      @media screen and (max-width: 768px) {
+         table {
+          height: 100vh;
+        }
+        /* .ek img {
+          padding: 5px;
+        }
+
+        table {
+          margin-left: -22px;
+          margin-right: -18px;
+          margin-top: -18px;
+         
+        } */
+        p {
+          font-size: 14px;
+          font-weight: 320;
+          line-height: 100%;
+          color: rgb(43, 140, 167);
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        table .ek >* {
+          display: block;
+        }
+        table .ek{
+          display: table-cell;
+        }
+        /* .ek {
+          display: inline-grid;
+          margin-left: 110px;
+        } */
+        p {
+          font-size: 14px;
+          font-weight: 320;
+          line-height: 100%;
+          color: rgb(43, 140, 167);
+        }
+      }
+
+      @media screen and (max-width: 540px) {
+           table .ek >* {
+          display: block;
+        }
+        table .ek{
+          display: table-cell;
+        }
+        /* .ek {
+          display: inline-grid;
+          margin-left: 110px;
+        } */
+        p {
+          font-size: 14px;
+          font-weight: 320;
+          line-height: 100%;
+          color: rgb(43, 140, 167);
+        }
+        table {
+          margin-left: -3px;
+          margin-top: -1px;
+        }
+      }
+      @media screen and (max-width: 465px) {
+         table .ek >* {
+          display: block;
+        }
+        table .ek{
+          display: table-cell;
+        }
+        /* .ek {
+          display: inline-grid;
+          margin-left: 60px;
+        } */
+        p {
+          font-size: 14px;
+          font-weight: 320;
+          line-height: 100%;
+          color: rgb(43, 140, 167);
+        }
+      }
+
+      @media screen and (max-width: 360px) {
+         table .ek >* {
+          display: block;
+        }
+        table .ek{
+          display: table-cell;
+        }
+        /* .ek {
+          display: inline-grid;
+          margin-left: 60px;
+        } */
+        p {
+          font-size: 14px;
+          font-weight: 320;
+          line-height: 100%;
+          color: rgb(43, 140, 167);
+        }
+        table {
+          margin-right: -225px;
+        }
+      }
+
+      @media screen and (max-width: 414px) {
+         table .ek >* {
+          display: block;
+        }
+        table .ek{
+          display: table-cell;
+        }
+        /* .ek {
+          display: inline-grid;
+          margin-left: 40px;
+          
+        } */
+        p {
+          font-size: 14px;
+          font-weight: 320;
+          line-height: 100%;
+          color: rgb(43, 140, 167);
+        }
+        table {
+          margin-left: -7px;
+          margin-top: -7px;
+        }
+      }
+      @media screen and (max-width: 380px) {
+         table .ek >* {
+          display: block;
+        }
+        table .ek{
+          display: table-cell;
+        }
+        /* .ek {
+          display: inline-grid;
+          margin-left: 50px;
+        } */
+        p {
+          font-size: 14px;
+          font-weight: 320;
+          line-height: 100%;
+          color: rgb(43, 140, 167);
+        }
+        table {
+          margin-left: -25px;
+          margin-top: -25px;
+        }
+      }
+
+      @media screen and (max-width: 395px) {
+         table .ek >* {
+          display: block;
+        }
+        table .ek{
+          display: table-cell;
+        }
+        /* .ek {
+          display: inline-grid;
+          margin-left: 55px;
+        } */
+        p {
+          font-size: 14px;
+          font-weight: 320;
+          line-height: 100%;
+          color: rgb(43, 140, 167);
+        }
+        table {
+          margin-left: -18px;
+          margin-top: -18px;
+        }
+      }
+      @media screen and (max-width: 376px) {
+         table .ek >* {
+          display: block;
+        }
+        table .ek{
+          display: table-cell;
+        }
+        /* .ek {
+          display: inline-grid;
+          margin-left: 54px;
+        } */
+        p {
+          font-size: 14px;
+          font-weight: 320;
+          line-height: 100%;
+          color: rgb(43, 140, 167);
+        }
+        table {
+          margin-left: -25px;
+        }
+      }
+
+      @media screen and (max-width: 360px) {
+         table .ek >* {
+          display: block;
+        }
+        table .ek{
+          display: table-cell;
+        }
+        /* .ek {
+          display: inline-grid;
+          margin-left: 55px;
+        } */
+        p {
+          font-size: 14px;
+          font-weight: 320;
+          line-height: 100%;
+          color: rgb(43, 140, 167);
+        }
+        table {
+          margin-left: -34px;
+          margin-top: -34px;
+        }
+      }
+      @media screen and (max-width: 280px) {
+         table .ek >* {
+          display: block;
+        }
+        table .ek{
+          display: table-cell;
+        }
+        /* .ek {
+          display: inline-grid;
+          margin-left: 60px;
+        } */
+        p {
+          font-size: 14px;
+          font-weight: 320;
+          line-height: 100%;
+          color: rgb(43, 140, 167);
+        }
+        table {
+          margin-left: -40px;
+          margin-top: -50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="padding: 30px" class="main">
+      <table
+        class="responsive"
+        cellpadding="0"
+        cellspacing="0"
+        border="1"
+        width="100%"
+        height="100vh"
+        align="center"
+        style="font-family: Arial, Helvetica, sans-serif; font-size: 14px"
+        padding="10px"
+        rules="none"
+      >
+        <tr>
+          <td
+            class="hhh"
+            data-label="Rank"
+            colspan="3"
+            style="padding-top: 20px"
+          >
+            <a href="#" style="cursor: default; pointer-events: none">
+              <img
+                src="https://prateekpmd.github.io/shamil_logo.png"
+                alt="company logo"
+                width="350px"
+                ;
+                style="
+                  display: block;
+                  height: 100px;
+                  object-fit: cover;
+                  margin-left: auto;
+                  margin-right: auto;
+                "
+              />
+            </a>
+          </td>
+        </tr>
+        <tr style="text-align: center">
+          <td colspan="3" style="padding: 2px 10px">
+            <h5 style="font-size: 22px; color: rgb(43, 141, 167)">
+              Here’s Your Special Invite To Shamil App.
+            </h5>
+          </td>
+        </tr>
+        <tr style="text-align: center" class="ek">
+          <td style="padding: 40px 10px">
+            <div>
+              <a href="#" style="cursor: default; pointer-events: none">
+                <img
+                  src="/2.jpg"
+                  alt=""
+                  width="200px"
+                  style="
+                    display: block;
+                    height: 220px;
+                    border: 7px solid rgb(43, 141, 167);
+                    object-fit: cover;
+                    margin-left: auto;
+                    margin-right: auto;
+                  "
+                />
+              </a>
+
+              <h1 style="font-size: 22px; color: rgb(43, 141, 167)">
+                Connect With People
+              </h1>
+            </div>
+          </td>
+          <td style="text-align: center; padding: 40px 10px">
+            <div>
+              <a href="#" style="cursor: default; pointer-events: none">
+                <img
+                  src="/2.jpg"
+                  alt=""
+                  width="200px"
+                  style="
+                    display: block;
+                    height: 220px;
+                    border: 7px solid rgb(43, 141, 167);
+                    object-fit: cover;
+                    margin-left: auto;
+                    margin-right: auto;
+                  "
+                />
+              </a>
+
+              <h1 style="font-size: 22px; color: rgb(43, 141, 167)">
+                Get Stuff Done
+              </h1>
+            </div>
+          </td>
+          <td style="text-align: center; padding: 40px 10px">
+            <div>
+              <a href="#" style="cursor: default; pointer-events: none">
+                <img
+                  src="/2.jpg"
+                  alt=""
+                  width="200px"
+                  style="
+                    display: block;
+                    height: 220px;
+                    border: 7px solid rgb(43, 141, 167);
+                    object-fit: cover;
+                    margin-left: auto;
+                    margin-right: auto;
+                  "
+                />
+              </a>
+
+              <h1 style="font-size: 22px; color: rgb(43, 141, 167)">
+                Celebrate
+              </h1>
+            </div>
+          </td>
+        </tr>
+        <tr style="text-align: center">
+          <td colspan="3" style="padding: 40px 10px" clas="bro">
+            <h1 style="font-size: 22px; color: rgb(43, 141, 167)">
+              Join The Shamil App Now
+            </h1>
+           <a href="/" ><button style="padding:16px; font-size: 18px; color: white;">Click On The Link Below</button></a>
+          </td>
+        </tr>
+        <tr style="text-align: center">
+          <td colspan="3" style="padding: 40px 10px">
+            <p>Trade name: &copy; PINAK LIFE SCIENCES.</p>
+            <p>
+              Physical address: 163 Pavitar Nagar, Haibowal Kalan, Ludhiana,
+              Punjab. PIN - 141001
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
